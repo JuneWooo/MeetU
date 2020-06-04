@@ -1,0 +1,83 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus":{
+					// 导航栏配置
+					"titleNView":{
+						// 搜索框配置
+						"searchInput":{
+							"align":"center",
+							"backgroundColor":"#F5F4F2",
+							"borderRadius":"4px",
+							"disabled": true,
+							"placeholder":"搜索关键字",
+							"placeholderColor":"#6D6C67"
+						},
+						"buttons":[
+							{
+								"color":"#333333",
+								"colorPressed":"#FD597C",
+								"float":"right",
+								"fontSize":"20px",
+								"fontSrc":"/static/iconfont.ttf",
+								"text": "\ue653"
+							}
+						]
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/news/news",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/msg/msg",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "MeetU",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"color":"#333333",
+		"selectedColor":"#FC5C82",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"black",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"./static/index.png",
+				"selectedIconPath":"static/index.png"
+			},
+			{
+				"pagePath":"pages/news/news",
+				"text":"动态",
+				"iconPath":"./static/news.png",
+				"selectedIconPath":"static/news.png"
+			},
+			{
+				"pagePath":"pages/msg/msg",
+				"text":"消息",
+				"iconPath":"./static/msg.png",
+				"selectedIconPath":"static/msg.png"
+			},
+			{
+				"pagePath":"pages/home/home",
+				"text":"我的",
+				"iconPath":"./static/home.png",
+				"selectedIconPath":"static/home.png"
+			}
+		]
+	}
+}
